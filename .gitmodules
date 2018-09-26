@@ -1,0 +1,6 @@
+[submodule "MobileFrontend"]
+	path = MobileFrontend
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MobileFrontend
+[submodule "MinervaNeue"]
+	path = MinervaNeue
+	url = https://gerrit.wikimedia.org/r/mediawiki/skins/MinervaNeue

@@ -1,0 +1,23 @@
+{
+  "name": "mobile-frontend-jquery-report",
+  "version": "1.0.0",
+  "description": "Measuring jQuery usage in MobileFrontend and Minerva",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "git submodule init",
+    "mobilefrontend": "eslint --no-eslintrc --config=.eslintrc --format=node_modules/eslint-detailed-reporter/lib/detailed.js MobileFrontend/resources -o mobileFrontend.html",
+    "minerva": "eslint --no-eslintrc --config=.eslintrc --format=node_modules/eslint-detailed-reporter/lib/detailed.js MinervaNeue/resources -o Minerva.html",
+    "start": "npm run mobilefrontend | npm run minerva",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "eslintIgnore": [
+    "*/**/dist/*.js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "4.19.1",
+    "eslint-detailed-reporter": "git+https://j4n-co@github.com/j4n-co/eslint-detailed-reporter.git#master",
+    "eslint-plugin-jquery": "1.3.2"
+  }
+}
