@@ -4,9 +4,9 @@
   "description": "Measuring jQuery usage in MobileFrontend and Minerva",
   "main": "index.js",
   "scripts": {
-    "postinstall": "git submodule init",
-    "mobilefrontend": "eslint --no-eslintrc --config=.eslintrc --format=node_modules/eslint-detailed-reporter/lib/detailed.js MobileFrontend/resources -o mobileFrontend.html",
-    "minerva": "eslint --no-eslintrc --config=.eslintrc --format=node_modules/eslint-detailed-reporter/lib/detailed.js MinervaNeue/resources -o Minerva.html",
+    "postinstall": "git submodule init && git submodule update",
+    "mobilefrontend": "eslint --no-eslintrc --config=.eslintrc --format=node_modules/eslint-detailed-reporter/lib/detailed.js MobileFrontend/resources -o mobilefrontend.html",
+    "minerva": "eslint --no-eslintrc --config=.eslintrc --format=node_modules/eslint-detailed-reporter/lib/detailed.js MinervaNeue/resources -o minerva.html",
     "start": "npm run mobilefrontend | npm run minerva",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
